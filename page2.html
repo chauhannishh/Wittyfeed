@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Slick Slider page 2 </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <style type="text/css">
+    .slider-container
+    {
+      width: 327px;
+      height: 300px;
+      margin: auto;
+    }
+    .fa
+    {
+      font-size: 40px;
+      color: #000;
+    }
+    .slick-next:before, .slick-prev:before
+    {
+      content: ' ';
+    }
+    .slick-dots li button:before 
+    {
+      font-size: 20px;
+      content: '•';
+    }
+    .slick-dots
+    {
+      top:300px;
+    }
+    .slick-prev, .slick-next
+    {
+      top:-72px;
+    }
+    .slick-prev 
+    {
+      left: 27px;
+    }
+    .slick-next 
+    {
+      right: 31px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s2 pnbtn"> 
+        <a href="index.html">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Prev
+            </button>
+          </a>
+      </div>
+      <div class="col s8">  </div>
+      <div class="col s2 pnbtn">
+        <a href="page3.html">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Next
+              <i class="material-icons right">send</i>
+            </button>
+          </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row tdbtn-mt0">
+      <div class="col s4"></div>
+      <div class="col s4">
+        <div class="row">
+          <div class="col s12 logo">
+            <img src="images/technical.png">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 logo heading">
+            <p class="tdbtn-mb0 tdbtn-mt0"> Technical </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s4"></div>
+    </div>
+  </div> <br>
+
+  <div class="slider-container">
+    
+    <div class="item">
+      <div class="row tdbtn-mt0">
+              <p class="subheading2 tdbtn-mb0"> Server </p>
+              <p class="content">World's best team is hiring the best people to turn them into the best minds.</p>
+              <hr class="chr">
+              <p class="jobs tdbtn-mt0 tdbtn-mb0"> No Jobs Available </p>
+        </div>
+    </div>
+
+
+    <div class="item">
+      <div class="row tdbtn-mt0">
+          <div class="col s12">
+              <p class="subheading2 tdbtn-mt0 tdbtn-mb0"> Back End </p> <br>
+              <p class="content">Join the innovative team that's compared with best in the game.</p>
+              <hr class="chr">
+              <p class="jobs tdbtn-mt0 tdbtn-mb0"> Jobs Available </p> <br><br>
+
+              <div class="row tdbtn-mt0">
+                <div class="col s12 outerdiv">
+                  <div class="container-fluid">
+                    <div class="row tdbtn-mt0 tdbtn-mb0">
+                      <div class="col s12 innerdiv">
+                        <span class="greendot"></span><p class="content chover">Software Developer</p><span class="bluedot" style="margin-top: 14px;"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><span class="one1"> 1 </span> <br>
+              <div class="row tdbtn-mt0 tdbtn-mb0">
+                <div class="col s12 outerdiv">
+                  <div class="container-fluid">
+                    <div class="row tdbtn-mt0 tdbtn-mb0">
+                      <div class="col s12 innerdiv">
+                        <span class="greendot2"></span><p class="content chover">Full Stack Developer</p><span class="bluedot2"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="one2"> 1 </span>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="item">
+      <div class="row tdbtn-mt0">
+              <p class="subheading2 tdbtn-mb0"> App </p>
+              <p class="content">Our Apps are changing the world for better, now the world wants your ideas.</p>
+              <hr class="chr">
+              <p class="jobs tdbtn-mt0 tdbtn-mb0"> No Jobs Available </p>
+            </div>
+    </div>
+  </div>     
+
+  <script
+  src="https://code.jquery.com/jquery-1.11.0.js"
+  integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="slick/slick.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $('.slider-container').slick({
+        dots: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+    });
+  </script>
+
+</body>
+</html>

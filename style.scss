@@ -1,0 +1,237 @@
+$primary-color : grey;
+$secondary-color: #00bcd4;
+$content-color:#818181;
+
+$heading-size: 30px;
+$sub-heading-size: 17px;
+$sub-heading2-size: 20px;
+$content-size: 18px;
+
+$font-family: 'museo_sans300,serif';
+$m-0: 0px;
+
+
+.jobs, .content, .heading, .subheading, img, .subheading2, .outerdiv
+{
+	text-align: center;
+}
+.logo, .tdbtn
+{
+	display: flex;
+  	justify-content: center;
+}
+.heading, .subheading, .subheading2
+{
+	color: $primary-color;
+}
+img
+{
+	height:75%;
+	width:75%;
+	display: block;
+}
+.heading
+{
+	font-size: $heading-size;
+	font-weight: 500;
+}
+.subheading
+{
+	font-size: $sub-heading-size;
+}
+.content
+{
+	font-size: $content-size;
+	margin :$m-0;
+	color: $content-color;
+}
+.blueones
+{
+	font-size: 20px;
+	font-weight: 500;
+	color: $secondary-color;
+}
+.pnbtn 
+{
+	margin-top: 20px;
+}
+.btn
+{
+    width: 60px;
+}
+.tdicon
+{
+	font-size: 45px !important;
+}
+
+.subheading2
+{
+	font-size: $sub-heading2-size;
+}
+.jobs
+{
+	color: $secondary-color;
+	font-size: $sub-heading-size;
+}
+.outerdiv
+{
+	border: 2px solid $primary-color;
+	border-radius: 10px;
+	width: 315px !important;
+    font-size: 45px;
+}
+.chover:hover
+{
+	color: white !important;
+	background-color: #3c676c;
+	width: 100%
+}
+.greendot, .greendot2
+{
+	background: #21d629;
+    border-radius: 50%;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: 715px;
+}
+.greendot
+{
+	bottom: 65px;
+}
+.greendot2
+{
+    margin-top: 9px;
+}
+.bluedot,.bluedot2
+{
+	border-radius: 50%;
+    background: #00bcd4;
+    position: absolute;
+    width: 20px;
+    left: 958px;
+    height: 20px;
+}
+.bluedot2
+{
+    bottom: 75px;
+    
+}
+.material-icons
+{
+	color: $secondary-color;
+}
+.greybg
+{
+	background-color: #f5f5f5;
+	opacity: 50%;
+}
+.page3content
+{
+	margin-left: 40px;
+	text-align: left;
+}
+.applybtn
+{
+	background-color: blue;
+	color: white !important;
+	width:100%;
+    height: 45px !important;
+}
+.uploadbtn
+{
+	background-color: blue;
+	color: white !important;
+	width:100%;
+    height: 35px !important;
+}
+#fixedbtn
+{
+	position: fixed;
+    bottom: $m-0;
+    right:$m-0; 
+    left:$m-0;
+}
+.applyform
+{
+	font-size: 30px;
+}
+.prefix
+{
+	font-size: 50px !important;
+}
+.btn
+{
+	line-height: 10px;
+}
+.container
+{
+	width: 90% !important;
+}
+.sliderrow
+{
+	margin-bottom: $m-0 !important;
+}
+.tdbtn-mt0
+{
+	margin-bottom: $m-0 !important;
+}
+.tdbtn-mb0
+{
+	margin-top: $m-0 !important;
+}
+
+.file-field .btn, .file-field .btn-large, .file-field .btn-small {
+    float: left;
+    height: 3rem;
+    line-height: 31.5px !important;
+}
+.uploadcontent
+{
+	font-size: 13px;
+    margin-left: 25px;
+}
+.one1, .one2
+{
+	position: absolute;
+    left: 965px;
+    z-index: 1;
+}
+.one1
+{
+	bottom: 75px;
+}
+.one2
+{
+    bottom: 25px;
+}
+.chr
+{
+	width: 140px;
+}
+form
+{
+	padding-left: 10px;
+	padding-right: 15px;
+}
+.techimg,.techimg2
+{
+	background-image: url(images/technical.png);
+    border-radius: 50%;
+    background-size: cover;
+    position: absolute;
+}
+.techimg
+{
+    width: 125px;
+    height: 125px;
+    top: 160px;
+    left: 12px;
+}
+.techimg2
+{
+    width: 78px;
+    height: 78px;
+    top: 81px;
+    left: 56px;
+}
