@@ -1,0 +1,222 @@
+$height: 100%;
+$width: 100%;
+$m-top: 0px !important;
+$m-bottom: 0px !important;
+
+%card
+{
+	img
+	{
+		height: $height;
+		width: $width;
+	}
+	p
+	{
+		margin-top: $m-top;
+		margin-bottom: $m-bottom;
+	}
+	footer
+	{
+		font-size: 11px;
+		span
+		{
+			color: blue;
+		}
+	}
+}
+%topics
+{
+	position: relative;
+    display: inline-block;
+    padding-right: 12px;
+    font-size: 20px;
+    font-weight: 625;
+    span
+	{
+	  	color: #e2004f;
+	}
+}
+%hider
+{
+	position: absolute;
+    right: 275px;
+    width: 75px;
+}
+%bgimage
+{
+	position: relative;
+    padding-top: 52.25% !important;
+    background-size: cover;
+    display: block;
+    background-position: 20% center;
+    background-color: #f0f0f0;
+}
+%play
+{
+	height: 35px !important;
+	width: 35px !important;
+	position:absolute;
+    z-index:3;
+}
+
+@import "bigcardC12";
+@import "smallcardC6";
+
+.container
+{
+	width: $width !important;
+}
+
+@import "navbar";
+
+.topics
+{	
+    &_one
+    {
+    	border: 2px solid #333;
+    	border-left: 0;
+    	@extend %topics;    	
+    }
+    &_two
+    {
+    	border: 2px solid #fff;
+    	border-left: 0;
+    	@extend %topics;
+    	margin-top: 12px;
+    }
+
+}
+
+.hider
+{
+	&_one
+	{
+		border-top: 4px solid #fff;
+		top: 542px;
+		@extend %hider;
+
+	}
+	&_two
+	{
+		border-top: 4px solid #000;
+		top:861px;
+		@extend %hider;
+	}
+	&_three
+	{
+		border-top: 4px solid #fff;
+		top: 1605px;
+		@extend %hider;
+	}
+	&_four
+	{
+		border-top: 4px solid #fff;
+		top: 1911px;
+		@extend %hider;
+	}
+}
+
+.hozslide
+{
+	overflow-x: auto;
+	white-space: nowrap;
+	font-size: 13px;
+}
+::-webkit-scrollbar 
+{	
+	display: none;
+}
+.item
+{
+	@extend %card;
+	padding-bottom: 3px;
+	margin: 5px 0px 0 15px;
+	vertical-align: text-top;
+	display: inline-block;
+	&-card
+	{
+		@extend %card;
+		padding-bottom: 3px;
+		margin: 5px 0px 0 15px;
+		vertical-align: text-top;
+		display: inline-block;
+		width: calc(100vw - 10vw);
+	}
+}
+.slideimage
+{
+	&-one, &-two, &-three, &-four
+	{
+		@extend %bgimage;
+	}
+	&-four
+	{
+		margin-right: 12px;
+	}
+}
+
+.verticard
+{
+	p
+	{
+		margin-top: $m-top;
+		margin-bottom:$m-bottom;
+		margin-left: -12px;
+		font-size: 14px;
+	}
+	span
+	{
+		vertical-align: text-top;
+		font-size:11px;
+		color:blue;
+	}
+}
+
+#dropdown
+{
+	top: 39.8px !important;
+	left: 242.3px !important;
+	i
+	{
+		position: absolute;
+	    top: -19px;
+	    left: 68px;
+	    color: whitesmoke;
+	    font-size: 33px;
+	}
+}
+.dropdown-content 
+{
+    overflow-y: visible !important;
+}
+
+.vimg
+{
+	@extend %bgimage;
+	.v-lay
+	{
+		background-color: #000;
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    opacity: .5;
+		z-index: 2;
+	}
+}
+
+.play
+{
+	&_small
+	{
+		@extend %play;
+		top: 30%;
+	    left: 40%;
+	}
+	&_big
+	{
+		@extend %play;
+		top: 40%;
+    	left: 50%;
+	}
+}

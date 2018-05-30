@@ -1,0 +1,48 @@
+.top
+{
+	background-color: #046fc2; 
+	color: whitesmoke;
+	.topnav
+	{
+		margin-left:12px;
+		margin-right:12px;
+		margin-bottom: $m-bottom;
+		padding-top:5px;
+		font-size: 20px;
+		.logo
+		{
+			float:left;
+		}
+		.name
+		{
+			position: absolute;
+			left: 37%;
+		}
+		.language
+		{
+			float:right;
+			a
+			{
+				color: whitesmoke;
+			}
+			li
+			{
+				a
+				{
+					color: black;
+				}
+			}
+		
+		}
+	}
+	.navibar
+	{
+		padding-top:5px;
+
+		.active
+		{
+			border-bottom: 2px solid white;
+			color: white;
+		}
+	}
+}
