@@ -1,12 +1,12 @@
-.bigcard img, .smallcard img, .item img, .item-card img {
+.bigcard img, .smallcard img, .hozslide .item img, .hozslide .item-card img {
   height: 100%;
   width: 100%; }
-.bigcard p, .smallcard p, .item p, .item-card p {
+.bigcard p, .smallcard p, .hozslide .item p, .hozslide .item-card p {
   margin-top: 0px !important;
   margin-bottom: 0px !important; }
-.bigcard footer, .smallcard footer, .item footer, .item-card footer {
+.bigcard footer, .smallcard footer, .hozslide .item footer, .hozslide .item-card footer {
   font-size: 11px; }
-  .bigcard footer span, .smallcard footer span, .item footer span, .item-card footer span {
+  .bigcard footer span, .smallcard footer span, .hozslide .item footer span, .hozslide .item-card footer span {
     color: blue; }
 
 .topics_one, .topics_two {
@@ -18,12 +18,14 @@
   .topics_one span, .topics_two span {
     color: #e2004f; }
 
-.hider_one, .hider_two, .hider_three, .hider_four {
+.topics_one:after, .topics_two:after {
+  content: '';
   position: absolute;
-  right: 275px;
-  width: 75px; }
+  width: 50%;
+  top: -3px;
+  border: 2px solid #fff; }
 
-.slideimage-one, .slideimage-two, .slideimage-three, .slideimage-four, .vimg {
+.hozslide .item-card .slideimage-one, .hozslide .item-card .slideimage-two, .hozslide .item-card .slideimage-three, .hozslide .item-card .slideimage-four, .vimg {
   position: relative;
   padding-top: 52.25% !important;
   background-size: cover;
@@ -31,17 +33,20 @@
   background-position: 20% center;
   background-color: #f0f0f0; }
 
-.play_small, .play_big {
+.vimg .play {
   height: 35px !important;
   width: 35px !important;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 3; }
 
 .bigcard p {
   font-size: 18px; }
 
 .smallcard p {
-  font-size: 13px; }
+  font-size: 14px; }
 
 .container {
   width: 100% !important; }
@@ -50,22 +55,53 @@
   background-color: #046fc2;
   color: whitesmoke; }
   .top .topnav {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 17px;
+    margin-right: 5px;
     margin-bottom: 0px !important;
-    padding-top: 5px;
-    font-size: 20px; }
+    padding-top: 18px;
+    font-size: 15px; }
     .top .topnav .logo {
       float: left; }
+      .top .topnav .logo .sidenav li a {
+        padding: 0 20px !important;
+        font-size: 16px !important;
+        font-weight: 3 !important; }
+      .top .topnav .logo .sidenav ul {
+        background-color: #046fc2;
+        margin: 0px;
+        padding: 10px;
+        text-align: center; }
+        .top .topnav .logo .sidenav ul li {
+          margin-left: 3px;
+          display: inline-block;
+          font-size: 12px;
+          line-height: 2px; }
+        .top .topnav .logo .sidenav ul p {
+          font-size: 14px;
+          color: #bfa3a3; }
+      .top .topnav .logo i {
+        color: whitesmoke; }
     .top .topnav .name {
       position: absolute;
-      left: 37%; }
+      left: 37%;
+      top: 6px; }
     .top .topnav .language {
       float: right; }
       .top .topnav .language a {
         color: whitesmoke; }
       .top .topnav .language li a {
         color: black; }
+      .top .topnav .language #dropdown {
+        top: 41.8px !important;
+        left: 248.3px !important; }
+        .top .topnav .language #dropdown i {
+          position: absolute;
+          top: -19px;
+          left: 70px;
+          color: whitesmoke;
+          font-size: 33px; }
+      .top .topnav .language .dropdown-content {
+        overflow-y: visible !important; }
   .top .navibar {
     padding-top: 5px; }
     .top .navibar .active {
@@ -79,80 +115,65 @@
   border: 2px solid #fff;
   border-left: 0;
   margin-top: 12px; }
-
-.hider_one {
-  border-top: 4px solid #fff;
-  top: 542px; }
-.hider_two {
-  border-top: 4px solid #000;
-  top: 861px; }
-.hider_three {
-  border-top: 4px solid #fff;
-  top: 1605px; }
-.hider_four {
-  border-top: 4px solid #fff;
-  top: 1911px; }
+  .topics_two:after {
+    border: 2px solid black; }
 
 .hozslide {
   overflow-x: auto;
   white-space: nowrap;
   font-size: 13px; }
+  .hozslide .item {
+    padding-bottom: 3px;
+    margin: 5px 0px 0 15px;
+    vertical-align: text-top;
+    display: inline-block; }
+    .hozslide .item-card {
+      padding-bottom: 3px;
+      margin: 5px 0px 0 15px;
+      vertical-align: text-top;
+      display: inline-block;
+      width: calc(100vw - 10vw); }
+      .hozslide .item-card p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        padding-top: 5px; }
+        .hozslide .item-card p b {
+          overflow: hidden; }
+      .hozslide .item-card .slideimage-four {
+        margin-right: 12px; }
 
 ::-webkit-scrollbar {
   display: none; }
 
-.item {
-  padding-bottom: 3px;
-  margin: 5px 0px 0 15px;
-  vertical-align: text-top;
-  display: inline-block; }
-  .item-card {
-    padding-bottom: 3px;
-    margin: 5px 0px 0 15px;
-    vertical-align: text-top;
-    display: inline-block;
-    width: calc(100vw - 10vw); }
-
-.slideimage-four {
-  margin-right: 12px; }
-
-.verticard p {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-  margin-left: -12px;
-  font-size: 14px; }
-.verticard span {
-  vertical-align: text-top;
-  font-size: 11px;
-  color: blue; }
-
-#dropdown {
-  top: 39.8px !important;
-  left: 242.3px !important; }
-  #dropdown i {
+.vimg {
+  margin-bottom: 4px !important; }
+  .vimg .v-lay {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: -19px;
-    left: 68px;
-    color: whitesmoke;
-    font-size: 33px; }
+    top: 0;
+    opacity: .5;
+    z-index: 2; }
 
-.dropdown-content {
-  overflow-y: visible !important; }
-
-.vimg .v-lay {
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  opacity: .5;
-  z-index: 2; }
-
-.play_small {
-  top: 30%;
-  left: 40%; }
-.play_big {
-  top: 40%;
-  left: 50%; }
+article {
+  margin-bottom: 25px; }
+  article .article_image {
+    background-size: cover;
+    width: 50%;
+    padding-top: 26%;
+    margin-left: 12px;
+    margin-right: 12px;
+    display: inline-block;
+    float: left; }
+  article .article_text {
+    font-size: 14px; }
+  article .article_author {
+    color: blue;
+    font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */

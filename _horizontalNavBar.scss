@@ -1,0 +1,52 @@
+.hozslide
+{
+	overflow-x: auto;
+	white-space: nowrap;
+	font-size: 13px;
+	.item
+	{
+		@extend %card;
+		padding-bottom: 3px;
+		margin: 5px 0px 0 15px;
+		vertical-align: text-top;
+		display: inline-block;
+		&-card
+		{
+			@extend %card;
+			padding-bottom: 3px;
+			margin: 5px 0px 0 15px;
+			vertical-align: text-top;
+			display: inline-block;
+			width: calc(100vw - 10vw);
+			p
+			{
+				overflow: hidden;
+			    text-overflow: ellipsis;
+			    display: -webkit-box;
+			    -webkit-line-clamp: 3;
+			    -webkit-box-orient: vertical;
+			     white-space: normal;
+			     padding-top: 5px;
+			    b
+			    {
+			    	overflow: hidden;
+			    }
+			}
+			.slideimage
+			{
+				&-one, &-two, &-three, &-four
+				{
+					@extend %bgimage;
+				}
+				&-four
+				{
+					margin-right: 12px;
+				}
+			}
+		}
+	}
+}
+::-webkit-scrollbar 
+{	
+	display: none;
+}

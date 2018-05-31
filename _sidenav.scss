@@ -1,0 +1,31 @@
+.sidenav
+{
+	li
+	{
+		a
+		{
+			padding: 0 20px !important;
+			font-size: 16px !important;
+			font-weight:3 !important;
+		}
+	}
+	ul
+	{
+		background-color: #046fc2;
+	    margin: 0px;
+	    padding: 10px;
+	    text-align: center;
+		li
+		{
+			margin-left: 3px;
+    		display: inline-block;
+    		font-size: 12px;
+    		line-height:2px;
+		}
+		p
+		{
+			font-size:14px;
+			color: #bfa3a3;
+		}
+	}
+}

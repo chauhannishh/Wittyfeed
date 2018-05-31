@@ -8,38 +8,124 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type = "text/javascript"
-         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
-      </script> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+ <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+
 </head>
 <body>
+
+	<!--Navigation Bar-->
 	<div class="container top">
 		<div class="row topnav">
 			<span class="logo">
-				☰
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  				<ul class="sidenav" id="mobile-demo">
+				    <li style="background-color: #046fc2; padding-top: 12px;margin-bottom: -8px;">
+				    	<a href="sass.html">
+				    		<svg xmlns="http://www.w3.org/2000/svg" width="107" height="36" viewBox="0 0 547 143">
+                            <path d="M41 61l-4-9h12C51 58 54 64 56 68c2 4 4 8 5 11 1 3 2 6 3 7 1 2 1 3 2 5 0-3 1-5 2-7 1-2 2-5 3-7 1-3 3-6 4-10 2-4 4-9 7-15h14l-29 66c-2-4-3-7-5-11 -1-4-3-7-4-11s-3-7-4-11c-2-4-3-7-5-11 -3 7-6 15-9 21 -3 7-6 14-9 21L0 52h14c3 6 5 11 6 15 2 4 3 7 4 10 1 3 2 5 2 7 0 2 1 4 1 7 0-1 1-2 1-3 0-1 1-3 2-5 1-2 2-5 4-9C36 71 38 66 41 61z" fill="#FFF"></path>
+                            <path d="M102 28c0-3 1-5 3-6 2-2 4-2 6-2 2 0 4 1 6 2 2 2 3 4 3 6 0 3-1 5-3 6 -2 2-4 2-6 2 -2 0-4-1-6-2C103 33 102 30 102 28zM118 114h-14V52h14V114z" fill="#FFF"></path>
+                            <path d="M141 25h14v27h16V64h-16v49h-14V64h-10V52h10V25z" fill="#FFF"></path>
+                            <path d="M187 25h14v27h16V64h-16v49h-14V64h-10V52h10V25z" fill="#FFF"></path>
+                            <path d="M245 143h-14c1-3 3-6 4-8 1-3 3-5 4-8 1-3 3-6 4-9 1-3 3-6 5-9 -2-4-5-9-7-14 -2-5-5-10-7-15 -2-5-5-10-7-15 -2-5-5-9-7-14h15c4 7 7 13 9 18 2 5 4 9 6 12 1 3 3 6 3 8 1 2 1 4 2 6 1-2 1-4 2-6 1-2 2-5 3-8 1-3 3-7 6-12 2-5 5-11 9-18h15L245 143z" fill="#FFF"></path>
+                            <path d="M293 65V52h11V39c0-13 3-23 9-29 6-6 15-9 26-10v13c-8 0-13 3-16 7 -3 4-5 11-5 19v13h19v14H318v48h-14V65H293z" fill="#FFF"></path>
+                            <path d="M400 107c-3 3-7 5-11 6 -4 2-9 2-13 2 -5 0-9-1-13-3 -4-2-8-4-10-7 -3-3-5-6-7-10 -2-4-3-8-3-13 0-4 1-9 3-13 2-4 4-7 7-10 3-3 6-5 10-7 4-2 8-3 12-3 7 0 13 2 18 6 5 4 9 10 11 17 -3 1-6 2-10 4 -4 2-8 3-12 5 -4 2-8 3-13 5 -4 2-8 3-12 5 2 3 4 5 7 7 3 2 6 3 10 3 3 0 5 0 8-1 3-1 5-2 6-4L400 107zM387 70c-1-2-3-4-5-5 -2-1-5-2-7-2 -3 0-5 1-7 2 -2 1-4 2-6 4 -2 2-3 4-4 6 -1 2-1 4-1 7v1c2-1 5-2 8-3 3-1 6-2 8-3s5-2 8-3C383 72 385 71 387 70z" fill="#FFF"></path>
+                            <path d="M469 107c-3 3-7 5-11 6 -4 2-9 2-13 2 -5 0-9-1-13-3 -4-2-8-4-10-7 -3-3-5-6-7-10 -2-4-3-8-3-13 0-4 1-9 3-13 2-4 4-7 7-10 3-3 6-5 10-7 4-2 8-3 12-3 7 0 13 2 18 6 5 4 9 10 11 17 -3 1-6 2-10 4 -4 2-8 3-12 5 -4 2-8 3-13 5 -4 2-8 3-12 5 2 3 4 5 7 7 3 2 6 3 10 3 3 0 5 0 8-1 3-1 5-2 6-4L469 107zM456 70c-1-2-3-4-5-5 -2-1-5-2-7-2 -3 0-5 1-7 2 -2 1-4 2-6 4 -2 2-3 4-4 6 -1 2-1 4-1 7v1c2-1 5-2 8-3 3-1 6-2 8-3s5-2 8-3C452 72 454 71 456 70z" fill="#FFF"></path>
+                            <path d="M481 83c0-5 1-9 2-13 2-4 4-7 7-10 3-3 6-5 10-7 4-2 8-2 13-2 3 0 6 0 8 1 2 1 4 2 6 2 2 1 3 2 4 3 1 1 2 2 2 3V0h14v114h-14v-4c0 0 0-1 0-2 0-1 0-1 0-1 -1 1-2 2-3 3 -1 1-3 2-5 3 -2 1-4 2-6 2 -2 1-5 1-7 1 -5 0-9-1-13-3s-7-4-10-7c-3-3-5-6-6-10C481 92 481 87 481 83zM495 83c0 3 0 5 1 8 1 2 2 4 4 6 2 2 4 3 6 4 2 1 5 1 8 1 3 0 5 0 8-1 2-1 4-2 6-4 2-2 3-4 4-6 1-2 1-5 1-7 0-3 0-5-1-7 -1-2-2-4-4-6 -2-2-4-3-6-4 -2-1-5-1-8-1 -3 0-5 0-8 1 -2 1-4 2-6 4 -2 2-3 4-4 6C495 77 495 80 495 83z" fill="#FFF"></path>
+                        </svg>
+				    	</a>
+				    </li>
+				    <li class = "divider"></li>
+				    <li><a href="badges.html">HOME</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="collapsible.html">SCIENCE & TECHNOLOGY</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="mobile.html">TRAVEL & PHOTOGRAPHY</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="mobile.html">HISTORY & RELIGION</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="mobile.html">TRAVEL & PHOTOGRAPHY</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="mobile.html">ENTERTAINMENT</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="mobile.html">SPORTS</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="mobile.html">FOODMATE</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="mobile.html">INNERVOICE</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="mobile.html">QUIZ</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="mobile.html">PEOPLE & POLITICS</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="mobile.html">RELATIONSHIP</a></li>
+				    <li class = "divider"></li>
+				    <li><a href="mobile.html">INDIA KA PULSE</a></li>
+				    <ul>
+				        <li>
+				          <span> ● </span> About us
+				        </li>
+				        <li>
+				          <span> ● </span> Privacy Policy
+				        </li>
+				        <li>
+				          <span> ● </span> Content Guidelines
+				        </li>
+				        
+				        <li>
+				          <span> ● </span> Advertise
+				        </li>
+				        <li>
+				          <span> ● </span> Terms of Use
+				        </li>
+				        <li>
+				          <span> ● </span> Sidemap
+				        </li> <br>
+				        <li>
+				          <span> ● </span> Contact Us
+				        </li> <br>
+				        <p> Vatsana Technologies @ 2018 </p>
+				      </ul>
+				 </ul>
 			</span>
+
 			<span class="name">
-				Wittyfeed	
+				<svg xmlns="http://www.w3.org/2000/svg" width="107" height="36" viewBox="0 0 547 143">
+                            <path d="M41 61l-4-9h12C51 58 54 64 56 68c2 4 4 8 5 11 1 3 2 6 3 7 1 2 1 3 2 5 0-3 1-5 2-7 1-2 2-5 3-7 1-3 3-6 4-10 2-4 4-9 7-15h14l-29 66c-2-4-3-7-5-11 -1-4-3-7-4-11s-3-7-4-11c-2-4-3-7-5-11 -3 7-6 15-9 21 -3 7-6 14-9 21L0 52h14c3 6 5 11 6 15 2 4 3 7 4 10 1 3 2 5 2 7 0 2 1 4 1 7 0-1 1-2 1-3 0-1 1-3 2-5 1-2 2-5 4-9C36 71 38 66 41 61z" fill="#FFF"></path>
+                            <path d="M102 28c0-3 1-5 3-6 2-2 4-2 6-2 2 0 4 1 6 2 2 2 3 4 3 6 0 3-1 5-3 6 -2 2-4 2-6 2 -2 0-4-1-6-2C103 33 102 30 102 28zM118 114h-14V52h14V114z" fill="#FFF"></path>
+                            <path d="M141 25h14v27h16V64h-16v49h-14V64h-10V52h10V25z" fill="#FFF"></path>
+                            <path d="M187 25h14v27h16V64h-16v49h-14V64h-10V52h10V25z" fill="#FFF"></path>
+                            <path d="M245 143h-14c1-3 3-6 4-8 1-3 3-5 4-8 1-3 3-6 4-9 1-3 3-6 5-9 -2-4-5-9-7-14 -2-5-5-10-7-15 -2-5-5-10-7-15 -2-5-5-9-7-14h15c4 7 7 13 9 18 2 5 4 9 6 12 1 3 3 6 3 8 1 2 1 4 2 6 1-2 1-4 2-6 1-2 2-5 3-8 1-3 3-7 6-12 2-5 5-11 9-18h15L245 143z" fill="#FFF"></path>
+                            <path d="M293 65V52h11V39c0-13 3-23 9-29 6-6 15-9 26-10v13c-8 0-13 3-16 7 -3 4-5 11-5 19v13h19v14H318v48h-14V65H293z" fill="#FFF"></path>
+                            <path d="M400 107c-3 3-7 5-11 6 -4 2-9 2-13 2 -5 0-9-1-13-3 -4-2-8-4-10-7 -3-3-5-6-7-10 -2-4-3-8-3-13 0-4 1-9 3-13 2-4 4-7 7-10 3-3 6-5 10-7 4-2 8-3 12-3 7 0 13 2 18 6 5 4 9 10 11 17 -3 1-6 2-10 4 -4 2-8 3-12 5 -4 2-8 3-13 5 -4 2-8 3-12 5 2 3 4 5 7 7 3 2 6 3 10 3 3 0 5 0 8-1 3-1 5-2 6-4L400 107zM387 70c-1-2-3-4-5-5 -2-1-5-2-7-2 -3 0-5 1-7 2 -2 1-4 2-6 4 -2 2-3 4-4 6 -1 2-1 4-1 7v1c2-1 5-2 8-3 3-1 6-2 8-3s5-2 8-3C383 72 385 71 387 70z" fill="#FFF"></path>
+                            <path d="M469 107c-3 3-7 5-11 6 -4 2-9 2-13 2 -5 0-9-1-13-3 -4-2-8-4-10-7 -3-3-5-6-7-10 -2-4-3-8-3-13 0-4 1-9 3-13 2-4 4-7 7-10 3-3 6-5 10-7 4-2 8-3 12-3 7 0 13 2 18 6 5 4 9 10 11 17 -3 1-6 2-10 4 -4 2-8 3-12 5 -4 2-8 3-13 5 -4 2-8 3-12 5 2 3 4 5 7 7 3 2 6 3 10 3 3 0 5 0 8-1 3-1 5-2 6-4L469 107zM456 70c-1-2-3-4-5-5 -2-1-5-2-7-2 -3 0-5 1-7 2 -2 1-4 2-6 4 -2 2-3 4-4 6 -1 2-1 4-1 7v1c2-1 5-2 8-3 3-1 6-2 8-3s5-2 8-3C452 72 454 71 456 70z" fill="#FFF"></path>
+                            <path d="M481 83c0-5 1-9 2-13 2-4 4-7 7-10 3-3 6-5 10-7 4-2 8-2 13-2 3 0 6 0 8 1 2 1 4 2 6 2 2 1 3 2 4 3 1 1 2 2 2 3V0h14v114h-14v-4c0 0 0-1 0-2 0-1 0-1 0-1 -1 1-2 2-3 3 -1 1-3 2-5 3 -2 1-4 2-6 2 -2 1-5 1-7 1 -5 0-9-1-13-3s-7-4-10-7c-3-3-5-6-6-10C481 92 481 87 481 83zM495 83c0 3 0 5 1 8 1 2 2 4 4 6 2 2 4 3 6 4 2 1 5 1 8 1 3 0 5 0 8-1 2-1 4-2 6-4 2-2 3-4 4-6 1-2 1-5 1-7 0-3 0-5-1-7 -1-2-2-4-4-6 -2-2-4-3-6-4 -2-1-5-1-8-1 -3 0-5 0-8 1 -2 1-4 2-6 4 -2 2-3 4-4 6C495 77 495 80 495 83z" fill="#FFF"></path>
+                        </svg>	
 			</span>
 			<span class="language">
-		      	<a class = "dropdown-button" href = "#" data-activates = "dropdown">en
+		      	<a class = "dropdown-button" href = "#" data-activates = "dropdown"><span id="textchange"> en </span>
 		        	<i class = "mdi-navigation-arrow-drop-down right"></i>
 		        	<i class="fa fa-caret-down"></i>
 		    	</a>
 				<ul id = "dropdown" class = "dropdown-content" data-activates = "dropdown">
 				 <i class="large material-icons">arrow_drop_up</i>
 		         <li>
-		         	<a href = "#"> English </a>
+		         	<a href = "#" onclick="changetoen()"> English </a>
 		         </li>
 		         <li class = "divider"></li>
 		         <li>
-		         	<a href = "#">Hindi</a>
+		         	<a href = "#" onclick="changetohn()"> Hindi </a>
 		         </li>
 		         <li class = "divider"></li>
 		         <li>
-		         	<a href = "#">Global</a>
+		         	<a href = "#" onclick="changetogl()">Global</a>
 		         </li>
 		      </ul>
 			</span>
@@ -81,12 +167,14 @@
 			<div class="item">
 				RELATIONSHIP
 			</div>
-			<div class="item">
+			<div class="item" style="margin-right: 10px;">
 				INDIA KA PULSE
 			</div>
 		</div>	
 	</div>
 
+
+	<!--Big Card and Small Card-->
 	<div class="container">
 		<div class="row bigcard">
 		    <div class="col s12">
@@ -100,7 +188,6 @@
 		    </div>
 		</div>
 	</div>
-
 	<div class="container">
 		<div class="row smallcard">
 		    <div class="col s6">
@@ -124,6 +211,7 @@
 		</div>
 	</div>
 
+	<!--Slider-->
 	<div class="container">
 		<div class="row">
 			<div class="col s12">
@@ -134,16 +222,14 @@
 					STORIES
 				</span>
 			</div>
-			<span class="hider_one"></span>
 		</div>
 	</div>
-
 	<div class="container-fluid hozslide">
 	    <div class="row">
 		    <div class="item-card">
 		    	<div class="slideimage-one" style="background-image: url(cardc12.png);"> </div>
 				<p>
-					<b> Here is How Much Geeta Vishwas of Shaktimaan <br> Has Transformed in 19 Years </b>
+					<b> Here is How Much Geeta Vishwas of Shaktimaan Has Transformed in 19 Years </b>
 				</p>
 				<footer>
 					BY <span> MUSKAN </span>
@@ -152,7 +238,7 @@
 	    <div class="item-card">
 	    	<div class="slideimage-two" style="background-image: url(slide1.png);"> </div>
 	    	<p>
-		        <b> 10 Words Which People Are Going Mad Over Because <br> They Rhyme With Alia Bhatt </b>
+		        <b> 10 Words Which People Are Going Mad Over Because They Rhyme With Alia Bhatt </b>
 		    </p>
 		    <footer>
 		      	BY <span> DHWANI </span>
@@ -161,7 +247,7 @@
 	    <div class="item-card">
 	    	<div class="slideimage-three" style="background-image: url(cardc61.png);"> </div>
 	    	<p>
-		        <b> Here is How Much Geeta Vishwas of Shaktimaan <br> Has Transformed in 19 Years </b>
+		        <b> Here is How Much Geeta Vishwas of Shaktimaan Has Transformed in 19 Years </b>
 		    </p>
 		    <footer>
 		      	BY <span> MUSKAN </span>
@@ -170,7 +256,7 @@
 	    <div class="item-card">
 	    	<div class="slideimage-four" style="background-image: url(cardc62.png);"> </div>
 	    	<p>
-		        <b> Here is How Much Geeta Vishwas of Shaktimaan Has <br> Transformed in 19 Years </b>
+		        <b> Here is How Much Geeta Vishwas of Shaktimaan Has Transformed in 19 Years </b>
 		    </p>
 		    <footer>
 		      	BY <span> ANKITA </span>
@@ -180,24 +266,7 @@
 	    </div>
   	</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  	<!--Video-->
   	<div class="container-fluid" style="background-color: black; color: white;">
   		<div class="row">
   			<div class="col s12">
@@ -208,14 +277,12 @@
 					VIDEOS
 				</span>
   			</div>
-  			<span class="hider_two"></span>
   		</div>
-
 		<div class="row bigcard">
 		    <div class="col s12">
 		    	<div class="row vimg" style="background-image: url(cardc12.png); margin-left: 2px; margin-right: 2px;">
 		    		<a href="#" class="v-lay"></a>
-		    		<img src="play.png" class="play_big">
+		    		<img src="play.png" class="play">
 		    	</div>
 		    	<div class="row">
 		    		<div class="col s12">
@@ -226,12 +293,11 @@
 		    	</div>
 		    </div>
 		</div>
-
 		<div class="row smallcard">
 		    <div class="col s6">
 		    	<div class="row vimg" style="background-image: url(cardc61.png); margin-left: 2px; margin-right: 2px;">
 		    		<a href="#" class="v-lay"></a>
-		    		<img src="play.png" class="play_small">
+		    		<img src="play.png" class="play">
 		    	</div>
 		    	<div class="row">
 		    		<div class="col s12">
@@ -244,7 +310,7 @@
 		    <div class="col s6">
 		    	<div class="row vimg" style="background-image: url(cardc62.png); margin-left: 2px; margin-right: 2px;">
 		    		<a href="#" class="v-lay"></a>
-		    		<img src="play.png" class="play_small">
+		    		<img src="play.png" class="play">
 		    	</div>
 		    	<div class="row">
 		    		<div class="col s12">
@@ -255,12 +321,11 @@
 		    	</div>
 		    </div>
 		</div>
-
 		<div class="row smallcard">
 		    <div class="col s6">
 		    	<div class="row vimg" style="background-image: url(cardc61.png); margin-left: 2px; margin-right: 2px;">
 		    		<a href="#" class="v-lay"></a>
-		    		<img src="play.png" class="play_small">
+		    		<img src="play.png" class="play">
 		    	</div>
 		    	<div class="row">
 		    		<div class="col s12">
@@ -273,7 +338,7 @@
 		    <div class="col s6">
 		    	<div class="row vimg" style="background-image: url(cardc62.png); margin-left: 2px; margin-right: 2px;">
 		    		<a href="#" class="v-lay"></a>
-		    		<img src="play.png" class="play_small">
+		    		<img src="play.png" class="play">
 		    	</div>
 		    	<div class="row">
 		    		<div class="col s12">
@@ -284,28 +349,9 @@
 		    	</div>
 		    </div>
 		</div>
-
   	</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  	<!--Slider-->
   	<div class="container">
 		<div class="row">
 			<div class="col s12">
@@ -316,16 +362,14 @@
 					FEED
 				</span>
 			</div>
-			<span class="hider_three"></span>
 		</div>
 	</div>
-
 	<div class="container-fluid hozslide">
 	    <div class="row">
 		    <div class="item-card">
 		    	<div class="slideimage-one" style="background-image: url(cardc12.png);"> </div>
 				<p>
-					<b> Here is How Much Geeta Vishwas of Shaktimaan <br> Has Transformed in 19 Years </b>
+					<b> Here is How Much Geeta Vishwas of Shaktimaan Has Transformed in 19 Years </b>
 				</p>
 				<footer>
 					BY <span> MUSKAN </span>
@@ -334,7 +378,7 @@
 	    <div class="item-card">
 	    	<div class="slideimage-two" style="background-image: url(slide1.png);"> </div>
 	    	<p>
-		        <b> 10 Words Which People Are Going Mad Over Because <br> They Rhyme With Alia Bhatt </b>
+		        <b> 10 Words Which People Are Going Mad Over Because They Rhyme With Alia Bhatt </b>
 		    </p>
 		    <footer>
 		      	BY <span> DHWANI </span>
@@ -343,7 +387,7 @@
 	    <div class="item-card">
 	    	<div class="slideimage-three" style="background-image: url(cardc61.png);"> </div>
 	    	<p>
-		        <b> Here is How Much Geeta Vishwas of Shaktimaan <br> Has Transformed in 19 Years </b>
+		        <b> Here is How Much Geeta Vishwas of Shaktimaan Has Transformed in 19 Years </b>
 		    </p>
 		    <footer>
 		      	BY <span> MUSKAN </span>
@@ -352,16 +396,17 @@
 	    <div class="item-card">
 	    	<div class="slideimage-four" style="background-image: url(cardc62.png);"> </div>
 	    	<p>
-		        <b> Here is How Much Geeta Vishwas of Shaktimaan Has <br> Transformed in 19 Years </b>
+		        <b> Here is How Much Geeta Vishwas of Shaktimaan Has Transformed in 19 Years </b>
 		    </p>
 		    <footer>
 		      	BY <span> ANKITA </span>
 		    </footer>
 	    </div>
-
 	    </div>
   	</div>
 
+
+	<!--Stories-->
   	<div class="container">
 		<div class="row">
 			<div class="col s12">
@@ -372,69 +417,80 @@
 					READ REPEAT
 				</span>
 			</div>
-			<span class="hider_four"></span>
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col s12">
-				<div class="row">
-					<div class="col s5 bigcard" style="height: 100px;">
-						<img src="cardc61.png">
-					</div>			
-					<div class="col s7 verticard">
-						<p>
-			        		<b> 10 Fascinating Facts about Draupadi You Probably Didn't Know </b>
-			        	</p>
-			        	<p>
-			        		<span> MUSKAN </span>
-			        	</p>
-					</div>		
-				</div>
-				<div class="row">
-					<div class="col s5 bigcard" style="height: 100px;">
-						<img src="cardc61.png">
-					</div>			
-					<div class="col s7 verticard">
-						<p>
-			        		<b> 10 Fascinating Facts about Draupadi You Probably Didn't Know </b>
-			        	</p>
-			        	<p>
-			        		<span> MUSKAN </span>
-			        	</p>
-					</div>		
-				</div>
-				<div class="row">
-					<div class="col s5 bigcard" style="height: 100px;">
-						<img src="cardc61.png">
-					</div>			
-					<div class="col s7 verticard">
-						<p>
-			        		<b> 10 Fascinating Facts about Draupadi You Probably Didn't Know </b>
-			        	</p>
-			        	<p>
-			        		<span> MUSKAN </span>
-			        	</p>
-					</div>		
-				</div>
-				<div class="row">
-					<div class="col s5 bigcard" style="height: 100px;">
-						<img src="cardc61.png">
-					</div>			
-					<div class="col s7 verticard">
-						<p>
-			        		<b> 10 Fascinating Facts about Draupadi You Probably Didn't Know </b>
-			        	</p>
-			        	<p>
-			        		<span> MUSKAN </span>
-			        	</p>
-					</div>		
-				</div>
-			</div>
+	<article class="col s12">
+		<div class="article_image" style="background-image: url(cardc12.png)"> </div>
+		<div class="article_text">
+			<b> 10 Fascinating Facts about Draupadi You Probably Didn't Know </b>
 		</div>
+		<div class="article_author">
+			DHAWANI
+		</div>
+	</article>
+	<article>
+		<div class="article_image" style="background-image: url(cardc61.png)"> </div>
+		<div class="article_text">
+			<b> 10 Fascinating Facts about Draupadi You Probably Didn't Know </b>
+		</div>
+		<div class="article_author">
+			MUSKAN
+		</div>
+	</article>
+	<article>
+		<div class="article_image" style="background-image: url(cardc62.png)"> </div>
+		<div class="article_text">
+			<b> 10 Fascinating Facts about Draupadi You Probably Didn't Know </b>
+		</div>
+		<div class="article_author">
+			ANKITA
+		</div>
+	</article>
+	<article>
+		<div class="article_image" style="background-image: url(story.png)"> </div>
+		<div class="article_text">
+			<b> 10 Fascinating Facts about Draupadi You Probably Didn't Know </b>
+		</div>
+		<div class="article_author">
+			NIKHIL
+		</div>
+	</article>
+	<article>
+		<div class="article_image" style="background-image: url(slide1.png)"> </div>
+		<div class="article_text">
+			<b> 10 Fascinating Facts about Draupadi You Probably Didn't Know </b>
+		</div>
+		<div class="article_author">
+			ANSHUMAN
+		</div>
+	</article>
+		
 	</div>
 
+		<script>
+    	function changetoen()
+    	{
+    		var x = document.getElementById("textchange").innerHTML="en";
+    	}
+    	function changetohn()
+    	{
+    		var x = document.getElementById("textchange").innerHTML="hin";
+    	}
+    	function changetogl()
+    	{
+    		var x = document.getElementById("textchange").innerHTML="gl";
+    	}
+    	
+
+    	$(document).ready(function()
+    	{
+    		$('.sidenav').sidenav();
+ 		});
+
+
+
+    </script>
 
 </body>
 </html>
