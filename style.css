@@ -1,0 +1,172 @@
+.story {
+  padding-top: 52.25%;
+  background-size: cover;
+  position: relative; }
+  .story .layer:after {
+    content: '';
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%; }
+
+.navbar {
+  position: fixed;
+  z-index: 9999;
+  display: inline;
+  top: 12px;
+  width: 100%; }
+  .navbar .menubar {
+    float: left;
+    margin-left: 12px; }
+    .navbar .menubar i {
+      color: white !important; }
+    .navbar .menubar .sidenav li a {
+      padding: 0 20px !important;
+      font-size: 16px !important;
+      font-weight: 3 !important; }
+    .navbar .menubar .sidenav ul {
+      background-color: #046fc2;
+      margin: 0px;
+      padding: 10px;
+      text-align: center; }
+      .navbar .menubar .sidenav ul li {
+        margin-left: 3px;
+        display: inline-block;
+        font-size: 12px;
+        line-height: 2px; }
+      .navbar .menubar .sidenav ul p {
+        font-size: 14px;
+        color: #bfa3a3; }
+  .navbar .dots {
+    display: inline-block;
+    position: absolute;
+    left: 45%; }
+    .navbar .dots-item {
+      height: 10px;
+      width: 10px;
+      border: 1.5px solid #fff;
+      border-radius: 50%;
+      display: inline-block; }
+  .navbar .cancel {
+    display: inline-block;
+    margin-right: 12px;
+    float: right; }
+    .navbar .cancel .cross {
+      fill: #fff; }
+  .navbar:after {
+    z-index: -2;
+    content: '';
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+    position: absolute;
+    left: 0px;
+    top: -12px;
+    height: 150%;
+    width: 100%; }
+
+.content {
+  margin-left: 2px; }
+  .content .btn {
+    background-color: #ed3624 !important;
+    font-size: 12px !important;
+    border-radius: 5px !important;
+    height: 25px !important;
+    line-height: 25px !important; }
+  .content .heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  .content .subheading {
+    font-size: 18px;
+    font-weight: 425;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  .content .adheader .separator {
+    border-top-style: dashed;
+    border-top-width: thin;
+    border-color: #979797;
+    position: absolute;
+    width: 100%;
+    left: 0px !important; }
+  .content .adheader .ad {
+    position: relative;
+    top: -11px;
+    color: #979797;
+    background-color: white;
+    left: 37%; }
+  .content .adcontent {
+    min-height: 250px; }
+    .content .adcontent .row {
+      margin-bottom: 0px; }
+      .content .adcontent .row .adheading {
+        font-weight: 600; }
+      .content .adcontent .row .limitlines {
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        font-weight: normal;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        line-height: 17px; }
+      .content .adcontent .row .bluefoot {
+        color: #4080ff;
+        text-align: center;
+        font-weight: 700; }
+        .content .adcontent .row .bluefoot img {
+          top: 3px;
+          position: relative; }
+
+.description p {
+  font-size: 18px;
+  opacity: 0.8; }
+  .description p::first-letter {
+    color: #046fc2;
+    float: left;
+    opacity: 0.5;
+    font-size: 70px;
+    margin-right: 11px; }
+.description span {
+  font-size: 18px;
+  opacity: 0.8; }
+
+.repeat {
+  width: 100% !important; }
+  .repeat .heading {
+    font-size: 20px;
+    margin-bottom: 0px; }
+  .repeat .image {
+    background-size: cover;
+    margin-bottom: 0px;
+    padding-top: 52.25% !important; }
+  .repeat .description {
+    font-size: 18px;
+    opacity: 0.8; }
+  .repeat iframe {
+    width: 100%;
+    padding-top: 10px; }
+
+.author {
+  z-index: 2;
+  position: relative;
+  bottom: 45px; }
+  .author .author-photo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-size: cover;
+    float: left; }
+  .author .author-details {
+    position: relative;
+    top: -4px;
+    left: -4px; }
+    .author .author-details .author-name {
+      color: white;
+      font-weight: 450; }
+    .author .author-details .author-date {
+      color: white;
+      font-size: 12px;
+      font-weight: 500; }
+
+/*# sourceMappingURL=style.css.map */
