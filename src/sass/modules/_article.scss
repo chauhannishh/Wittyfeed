@@ -1,0 +1,27 @@
+article
+{
+	margin-bottom: 25px;
+
+	.article
+	{
+		&_image
+		{
+			background-size: cover;
+		    width: 50%;
+		    padding-top: 26%;
+		    margin-left: 12px;
+		    margin-right:12px;
+		    display: inline-block;
+		    float: left;
+		}
+		&_text
+		{
+			font-size:14px;
+		}
+		&_author
+		{
+			color:blue;
+			font-size: 12px;
+		}
+	}
+}

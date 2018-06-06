@@ -1,0 +1,71 @@
+.top
+{
+	background-color: #046fc2; 
+	color: whitesmoke;
+	.topnav
+	{
+		margin-left: 17px;
+    	margin-right: 5px;
+		margin-bottom: $m-bottom;
+		padding-top:18px;
+		font-size: 15px;
+		.logo
+		{
+			@import "sidenav";
+			float:left;
+			i
+			{
+				color: whitesmoke;
+			}
+		}
+		.name
+		{
+			position: absolute;
+			left: 37%;
+			top: 6px;
+		}
+		.language
+		{
+			float:right;
+			a
+			{
+				color: whitesmoke;
+			}
+			li
+			{
+				a
+				{
+					color: black;
+				}
+			}
+			#dropdown
+			{
+				top: 41.8px !important;
+			    left: 248.3px !important;
+				i
+				{
+					position: absolute;
+				    top: -19px;
+				    left: 70px;
+				    color: whitesmoke;
+				    font-size: 33px;
+				}
+			}
+			.dropdown-content 
+			{
+			    overflow-y: visible !important;
+			}
+		
+		}
+	}
+	.navibar
+	{
+		padding-top:5px;
+
+		.active
+		{
+			border-bottom: 2px solid white;
+			color: white;
+		}
+	}
+}
