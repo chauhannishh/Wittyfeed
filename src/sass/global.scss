@@ -64,15 +64,15 @@ $m-bottom: 0px !important;
     z-index:3;
 }
 
-@import "bigcardC12";
-@import "smallcardC6";
+@import "modules/bigcardC12";
+@import "modules/smallcardC6";
 
 .container
 {
 	width: $width !important;
 }
 
-@import "navbar";
+@import "modules/navbar";
 
 .topics
 {	
@@ -101,7 +101,7 @@ $m-bottom: 0px !important;
 
 }
 
-@import "horizontalNavBar";
+@import "modules/horizontalNavBar";
 
 .vimg
 {
@@ -126,4 +126,4 @@ $m-bottom: 0px !important;
 
 
 
-@import "article";
+@import "modules/article";

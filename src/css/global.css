@@ -1,9 +1,11 @@
 .bigcard img, .smallcard img, .hozslide .item img, .hozslide .item-card img {
   height: 100%;
   width: 100%; }
+
 .bigcard p, .smallcard p, .hozslide .item p, .hozslide .item-card p {
   margin-top: 0px !important;
   margin-bottom: 0px !important; }
+
 .bigcard footer, .smallcard footer, .hozslide .item footer, .hozslide .item-card footer {
   font-size: 11px; }
   .bigcard footer span, .smallcard footer span, .hozslide .item footer span, .hozslide .item-card footer span {
@@ -111,6 +113,7 @@
 .topics_one {
   border: 2px solid #333;
   border-left: 0; }
+
 .topics_two {
   border: 2px solid #fff;
   border-left: 0;
@@ -175,5 +178,3 @@ article {
   article .article_author {
     color: blue;
     font-size: 12px; }
-
-/*# sourceMappingURL=style.css.map */
