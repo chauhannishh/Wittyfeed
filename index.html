@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Feedback Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" />
+	<link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col m3"></div>
+			<div class="col m6 main">
+
+				<!-- Heading -->
+				<div class="row top">
+					<div class="col m12 topbg">
+				     	<p class="heading">Only An English Expert Can Properly Use These English Phrases Correctly Can You?</p>
+				    </div>
+				</div>
+
+				<!-- Emojis -->
+				<div class="row">
+					<div class="col m12">
+							<div class="center" id="angry" onclick="blurs('angry')">
+								<!-- <img src="gif/angry.gif"> -->
+								<img src="img/angry.png">
+								<p><b>Angry</b></p>
+							</div>
+
+							<div class="center" id="sad" onclick="blurs('sad')">
+								<!-- <img src="gif/sad.gif"> -->
+								<!-- <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/3eee1d34559659.56d59de621daa.gif"> -->
+								<img src="img/sad.png">
+								<p><b>Sad</b></p>
+							</div>
+
+							<div class="center" id="haha" onclick="blurs('haha')">
+								<!-- <img src="gif/haha.gif"> -->
+								<img src="img/haha.png">
+								<p><b>Haha</b></p>
+							</div>
+
+							<div class="center" id="love" onclick="blurs('love')">
+								<!-- <img src="gif/love.gif"> -->
+								<img src="img/love.png">
+								<p><b>Love</b></p>
+							</div>
+
+							<div class="center" id="wow" onclick="blurs('wow')">
+								<!-- <img src="gif/wow.gif"> -->
+								<img src="img/wow.png">
+								<p><b>Wow</b></p>
+							</div>
+					</div>
+				</div>
+
+				<!-- Input Field -->
+				<div class="row" id="text_btn" style="display: none;">
+					<div class="m12">
+						<label>
+							<input type="text" name="feedback" placeholder="Tell us about your experience" id="input_text">
+							<div class="row">
+								<div class="col m4"></div>
+								<div class="col m4">
+									<button class="btn btn-danger"><i class="material-icons right">send</i>Submit</button>
+								</div>
+								<div class="col m4"></div>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="col m3"></div>
+		</div>
+	</div>
+
+	<script>
+		function blurs(id)
+		{
+			var c = document.getElementById('text_btn');
+			c.style.display="block";
+
+			var d = document.getElementById('text_btn').getElementsByClassName('m12')[0];
+			d.style.animation = "fadeIn 1s";
+			d.style.opacity = "1";
+
+			//The Opacity One
+			var x = document.getElementsByClassName('center');
+			for(var y=0; y<x.length; y++)
+			{
+				x[y].style.opacity = "0.5";
+			}
+			document.getElementById(id).style.opacity="1";
+
+
+			//GIF to PNG
+			var ids = ['angry','sad','haha','love','wow'];
+			for(var i=0; i<ids.length; i++)
+			{
+				document.getElementsByClassName('center')[i].getElementsByTagName('img')[0].src="img/" + ids[i] + ".png";
+				/*document.getElementsByClassName('center')[i].getElementsByTagName('img')[0].style.height="50px";
+				document.getElementsByClassName('center')[i].getElementsByTagName('img')[0].style.width="50px";*/
+			}
+			document.getElementById(id).getElementsByTagName('img')[0].src="gif/" + id + ".gif";
+			/*document.getElementById(id).getElementsByTagName('img')[0].style.height="100px";
+			document.getElementById(id).getElementsByTagName('img')[0].style.width="100px";*/
+		}
+
+	</script>
+</body>
+</html>
